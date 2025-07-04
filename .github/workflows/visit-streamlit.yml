@@ -2,7 +2,7 @@ name: Visit Streamlit App
 
 on:
   schedule:
-    - cron: '0 */10 * * *'
+    - cron: '0 */10 * * *'  # Every 10 hours
   workflow_dispatch:
 
 jobs:
@@ -17,7 +17,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y chromium-browser
-          pip install selenium
+          pip install selenium webdriver-manager
 
       - name: Visit Streamlit App
         run: |
