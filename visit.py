@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
-URL = "dc311eta.streamlit.app"
+URL = "https://dc311eta.streamlit.app/"
 
 options = webdriver.ChromeOptions()
 options.add_argument('--headless')
